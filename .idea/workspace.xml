@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="39623df8-656a-46ba-b7b2-da8c0d3b7cf8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rango/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rango/tests/tests_chapter3.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/rango/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rango/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tango_with_django_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tango_with_django_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tango_with_django_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tango_with_django_project/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rango/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rango/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -35,7 +36,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/manage.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -45,7 +46,7 @@
       <recent name="C:\Users\GA1\Web Application Development\tango_with_django_project\tango_with_django_project" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in tests_chapter3.py">
+  <component name="RunManager" selected="Python tests.Unittests in test_chapter3">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="tango_with_django_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,6 +133,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_chapter3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="tango_with_django_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_chapter3&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in tests_chapter3.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="tango_with_django_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,9 +167,11 @@
       <item itemvalue="Python tests.Unittests for tango_with_django_project.tests_chapter3.Chapter3ProjectStructureTests.test_project_created" />
       <item itemvalue="Python tests.Unittests in C:/Users/GA1/Web Application Development/tango_with_django_project/tango_with_django_project/tests_chapter3.py" />
       <item itemvalue="Python tests.Unittests in tests_chapter3.py" />
+      <item itemvalue="Python tests.Unittests in test_chapter3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_chapter3" />
         <item itemvalue="Python tests.Unittests in tests_chapter3.py" />
         <item itemvalue="Python tests.Unittests for tango_with_django_project.tests_chapter3.Chapter3ProjectStructureTests.test_project_created" />
         <item itemvalue="Python tests.Unittests in C:/Users/GA1/Web Application Development/tango_with_django_project/tango_with_django_project/tests_chapter3.py" />
@@ -180,26 +197,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="30" width="1089" height="705" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1584318921499" />
+    <state x="902" y="218" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584982916449">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="902" y="218" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1584982916449" />
     <state x="826" y="170" key="FileChooserDialogImpl" timestamp="1584318749153">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="826" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584318749153" />
-    <state width="746" height="485" key="GridCell.Tab.0.bottom" timestamp="1584319277965">
+    <state width="745" height="58" key="GridCell.Tab.0.bottom" timestamp="1584982952788">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="485" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584319277965" />
-    <state width="746" height="485" key="GridCell.Tab.0.center" timestamp="1584319277964">
+    <state width="745" height="58" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584982952788" />
+    <state width="745" height="58" key="GridCell.Tab.0.center" timestamp="1584982952787">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="485" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584319277964" />
-    <state width="746" height="485" key="GridCell.Tab.0.left" timestamp="1584319277964">
+    <state width="745" height="58" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584982952787" />
+    <state width="745" height="58" key="GridCell.Tab.0.left" timestamp="1584982952786">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="485" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584319277964" />
-    <state width="746" height="485" key="GridCell.Tab.0.right" timestamp="1584319277965">
+    <state width="745" height="58" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584982952786" />
+    <state width="745" height="58" key="GridCell.Tab.0.right" timestamp="1584982952787">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="485" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584319277965" />
+    <state width="745" height="58" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584982952787" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1584318925876">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

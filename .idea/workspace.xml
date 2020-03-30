@@ -4,9 +4,8 @@
     <list default="true" id="39623df8-656a-46ba-b7b2-da8c0d3b7cf8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/populate_rango.py" beforeDir="false" afterPath="$PROJECT_DIR$/populate_rango.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rango/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rango/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rango/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rango/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rango/category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/rango/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rango/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

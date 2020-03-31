@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="39623df8-656a-46ba-b7b2-da8c0d3b7cf8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rango/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rango/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rango/add_category.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rango/add_category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rango/add_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rango/add_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rango/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rango/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rango/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rango/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rango/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rango/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +38,13 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\GA1\Web Application Development\tango_with_django_project\rango\templatetags" />
       <recent name="C:\Users\GA1\Web Application Development\tango_with_django_project\rango\tests" />
       <recent name="C:\Users\GA1\Web Application Development\tango_with_django_project\rango" />
       <recent name="C:\Users\GA1\Web Application Development\tango_with_django_project\tango_with_django_project" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_chapter3">
+  <component name="RunManager" selected="Python tests.Unittests in C:/Users/GA1/Web Application Development/tango_with_django_project/tests/test_chapter3">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="tango_with_django_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,7 +131,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_chapter3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in C:/Users/GA1/Web Application Development/tango_with_django_project/tests/test_chapter3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="tango_with_django_project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -168,12 +164,12 @@
       <item itemvalue="Python tests.Unittests for tango_with_django_project.tests_chapter3.Chapter3AboutPageTests.test_for_index_hyperlink" />
       <item itemvalue="Python tests.Unittests for tango_with_django_project.tests_chapter3.Chapter3ProjectStructureTests.test_project_created" />
       <item itemvalue="Python tests.Unittests in C:/Users/GA1/Web Application Development/tango_with_django_project/tango_with_django_project/tests_chapter3.py" />
-      <item itemvalue="Python tests.Unittests in test_chapter3" />
       <item itemvalue="Python tests.Unittests in tests_chapter3.py" />
+      <item itemvalue="Python tests.Unittests in C:/Users/GA1/Web Application Development/tango_with_django_project/tests/test_chapter3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_chapter3" />
+        <item itemvalue="Python tests.Unittests in C:/Users/GA1/Web Application Development/tango_with_django_project/tests/test_chapter3" />
         <item itemvalue="Python tests.Unittests in tests_chapter3.py" />
         <item itemvalue="Python tests.Unittests for tango_with_django_project.tests_chapter3.Chapter3ProjectStructureTests.test_project_created" />
         <item itemvalue="Python tests.Unittests in C:/Users/GA1/Web Application Development/tango_with_django_project/tango_with_django_project/tests_chapter3.py" />

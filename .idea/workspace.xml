@@ -6,7 +6,9 @@
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rango/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rango/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rango/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tango_with_django_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tango_with_django_project/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/rango/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rango/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rango/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rango/category.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -220,22 +222,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="826" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584318749153" />
-    <state width="745" height="201" key="GridCell.Tab.0.bottom" timestamp="1585746313717">
+    <state width="745" height="201" key="GridCell.Tab.0.bottom" timestamp="1585749455358">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="201" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585746313717" />
-    <state width="745" height="201" key="GridCell.Tab.0.center" timestamp="1585746313716">
+    <state width="745" height="201" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585749455358" />
+    <state width="745" height="201" key="GridCell.Tab.0.center" timestamp="1585749455356">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="201" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585746313716" />
-    <state width="745" height="201" key="GridCell.Tab.0.left" timestamp="1585746313716">
+    <state width="745" height="201" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585749455356" />
+    <state width="745" height="201" key="GridCell.Tab.0.left" timestamp="1585749455355">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="201" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585746313716" />
-    <state width="745" height="201" key="GridCell.Tab.0.right" timestamp="1585746313717">
+    <state width="745" height="201" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585749455355" />
+    <state width="745" height="201" key="GridCell.Tab.0.right" timestamp="1585749455357">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="201" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585746313717" />
+    <state width="745" height="201" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585749455357" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1584318925876">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -264,9 +266,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="847" y="13" width="611" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1585735836218" />
-    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585743428033">
+    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585756192640">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585743428033" />
+    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585756192640" />
   </component>
 </project>

@@ -1,3 +1,4 @@
+from django.utils import timezone
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.http import HttpResponse
@@ -144,6 +145,7 @@ class GotoUrlView(View):
             return redirect(reverse('rango:index'))
 
         page.views += 1
+        page.last_visit = timezone.now()
         page.save()
 
         return redirect(page.url)

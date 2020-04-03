@@ -1,4 +1,4 @@
-# tango_with_django_project
+# Tango With Django Project
 
 ## Overview
 This is a repository of the application from 'Tango With Django' book, by Leif Azzopardi and David Maxwell (https://www.tangowithdjango.com/).

@@ -3,10 +3,11 @@ from django.test import TestCase
 from django.urls import reverse
 from rango.models import Category, Page
 from rango.TopFiveCategoriesFromStub import TopFiveCategoriesFromStub
-from mock import patch
+from mock import patch, Mock
 from nose.tools import assert_is_not_none
 from rango.bing_search import run_query
 from rango.helpers import add_category, add_page
+import json
 
 
 # Create your tests here.
@@ -93,12 +94,46 @@ class PageMethodTests(TestCase):
 
 
 class BingSearchApiTests(TestCase):
+
     @patch('rango.bing_search.requests.get')
     def test_run_query_runs(self, mock_get):
         """
-        Checks that the run query calls the bing search api, using a mock.
+        Checks that the run_query method calls the bing search api, using a mock.
         """
         mock_get.return_value.ok = True
         response = run_query('Python')
         assert_is_not_none(response)
 
+    @patch('rango.bing_search.requests.get')
+    def test_run_query_performs_expected_output(self, mock_get):
+        """
+        Checks that the run_query method performs its expected output using mock data.
+        """
+        mock_get.return_value.ok = True
+
+        results = {'webPages':
+                       {'value':
+                            [{'name': 'Python',
+                              'url': 'www.python.com',
+                              'snippet': 'Python download'
+                              },
+                             {'name': 'Python 2',
+                              'url': 'www.python2.com',
+                              'snippet': 'Python'
+                            }]
+                       }
+                   }
+
+        mock_get.return_value = Mock()
+        mock_get.return_value.json.return_value = results
+
+        response = run_query('Python')
+
+        expected_output = [{'title': 'Python',
+                            'link': 'www.python.com',
+                            'summary': 'Python download'},
+                           {'title': 'Python 2',
+                            'link': 'www.python2.com',
+                            'summary': 'Python'}]
+
+        self.assertEqual(response, expected_output)

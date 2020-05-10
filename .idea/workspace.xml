@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39623df8-656a-46ba-b7b2-da8c0d3b7cf8" name="Default Changelist" comment="" />
+    <list default="true" id="39623df8-656a-46ba-b7b2-da8c0d3b7cf8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tango_with_django_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tango_with_django_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rango/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/rango/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rango/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rango/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +48,57 @@
       <recent name="C:\Users\GA1\Web Application Development\tango_with_django_project\rango" />
     </key>
   </component>
+  <component name="RunManager" selected="Python tests.Unittests for tests.CategoryMethodTests">
+    <configuration name="Rango" type="PythonConfigurationType" factoryName="Python">
+      <module name="tango_with_django_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name=" DJANGO_SETTINGS_MODULE" value="mysite.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\GA1\Envs\rango\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for tests.CategoryMethodTests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="tango_with_django_project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="DJANGO_SETTINGS_MODULE" value="tango_with_django_project.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\GA1\Envs\rango\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rango" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.CategoryMethodTests&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Rango" />
+      <item itemvalue="Python tests.Unittests for tests.CategoryMethodTests" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests for tests.CategoryMethodTests" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -54,21 +113,53 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="540" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585906239342">
+    <state x="116" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587742952844">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="540" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1585906239342" />
-    <state x="826" y="170" key="FileChooserDialogImpl" timestamp="1584317118690">
+    <state x="116" y="56" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1587742952844" />
+    <state x="540" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589123773758">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="826" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584317118690" />
-    <state x="555" y="58" key="SettingsEditor" timestamp="1584317124535">
+    <state x="540" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1589123773758" />
+    <state x="280" y="174" key="EnvironmentVariablesDialog" timestamp="1587742407335">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="555" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584317124535" />
+    <state x="280" y="174" key="EnvironmentVariablesDialog/0.0.1536.824@0.0.1536.824" timestamp="1587742407335" />
+    <state x="826" y="170" key="FileChooserDialogImpl" timestamp="1588799193065">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="826" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1588799193065" />
+    <state width="745" height="227" key="GridCell.Tab.0.bottom" timestamp="1587745224564">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="745" height="227" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587745224564" />
+    <state width="745" height="227" key="GridCell.Tab.0.center" timestamp="1587745224564">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="745" height="227" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587745224564" />
+    <state width="745" height="227" key="GridCell.Tab.0.left" timestamp="1587745224564">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="745" height="227" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587745224564" />
+    <state width="745" height="227" key="GridCell.Tab.0.right" timestamp="1587745224564">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="745" height="227" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587745224564" />
+    <state x="555" y="58" key="SettingsEditor" timestamp="1587743088171">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="555" y="58" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587743088171" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1584316589599">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584316589599" />
+    <state x="815" y="147" width="609" height="536" key="find.popup" timestamp="1589035506466">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="815" y="147" width="609" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1589035506466" />
+    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1588330860880">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1588330860880" />
   </component>
 </project>

@@ -11,19 +11,24 @@ from rango.forms import CategoryForm, PageForm, UserProfileForm
 from rango.models import Category, Page, UserProfile
 from rango.bing_search import run_query
 import rango.helpers as hp
+from rango.TopFiveCategoriesFromModels import TopFiveCategoriesFromModels
 
 
 class IndexView(View):
     def get(self, request):
-        category_list = Category.objects.order_by('-likes')[:5]
+
         page_list = Page.objects.order_by('-views')[:5]
+
+        categories = TopFiveCategoriesFromModels(Category)
+        category_list = categories.get_list_of_top_5_categories()
 
         context_dict = dict()
         context_dict['boldmessage'] = 'Crunchy, creamy, cookie, candy, cupcake!'
         context_dict['categories'] = category_list
         context_dict['pages'] = page_list
 
-        hp.visitor_cookie_handler(request)
+        if hasattr(request, 'session'):
+            hp.visitor_cookie_handler(request)
 
         return render(request, 'rango/index.html', context=context_dict)
 
@@ -31,8 +36,11 @@ class IndexView(View):
 class AboutView(View):
     def get(self, request):
         context_dict = dict()
-        hp.visitor_cookie_handler(request)
-        context_dict['visits'] = request.session['visits']
+
+        if hasattr(request, 'session'):
+            hp.visitor_cookie_handler(request)
+            context_dict['visits'] = request.session['visits']
+
         context_dict['boldmessage'] = 'This tutorial has been put together by Amy Gillies.'
 
         return render(request, 'rango/about.html', context_dict)
@@ -60,7 +68,7 @@ class ShowCategoryView(View):
         return render(request, 'rango/category.html', context=self.context_dict)
 
     @method_decorator(login_required)
-    def post(self, request, category_name_slug):
+    def post(self, request):
         query = request.POST['query'].strip()
         if query:
             self.context_dict['query'] = query

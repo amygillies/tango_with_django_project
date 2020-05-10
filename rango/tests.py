@@ -2,6 +2,8 @@ from django.utils import timezone
 from django.test import TestCase
 from django.urls import reverse
 from rango.models import Category, Page
+from rango.TopFiveCategoriesFromStub import TopFiveCategoriesFromStub
+from rango.TopFiveCategoriesFromModels import TopFiveCategoriesFromModels
 
 
 # Create your tests here.
@@ -55,6 +57,21 @@ class IndexViewTests(TestCase):
         num_categories = len(response.context['categories'])
         self.assertEquals(num_categories, 3)
 
+    def test_index_view_with_categories_stub(self):
+
+        categories = TopFiveCategoriesFromStub()
+
+        response = self.client.get(reverse('rango:index'))
+        self.assertEqual(response.status_code, 200)
+
+        list_of_categories = categories.get_list_of_top_5_categories()
+
+        for category in list_of_categories:
+            self.assertContains(response, category.name)
+
+    #@patch('rango.TopFiveCategoriesFromModels')
+    #def test_categories_viewed(self, mock_categories_list):
+
 
 class PageMethodTests(TestCase):
     def test_not_future_last_visit(self):
@@ -73,6 +90,7 @@ class PageMethodTests(TestCase):
         self.assertTrue(page.last_visit >= date_created)
 
 
+# Helper functions
 def add_category(name, views=0, likes=0):
     category = Category.objects.get_or_create(name=name)[0]
     category.views = views

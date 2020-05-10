@@ -3,7 +3,10 @@ from django.test import TestCase
 from django.urls import reverse
 from rango.models import Category, Page
 from rango.TopFiveCategoriesFromStub import TopFiveCategoriesFromStub
-from rango.TopFiveCategoriesFromModels import TopFiveCategoriesFromModels
+from mock import patch
+from nose.tools import assert_is_not_none
+from rango.bing_search import run_query
+from rango.helpers import add_category, add_page
 
 
 # Create your tests here.
@@ -58,7 +61,9 @@ class IndexViewTests(TestCase):
         self.assertEquals(num_categories, 3)
 
     def test_index_view_with_categories_stub(self):
-
+        """
+        Checks whether categories are displayed correctly when present using a stub.
+        """
         categories = TopFiveCategoriesFromStub()
 
         response = self.client.get(reverse('rango:index'))
@@ -68,9 +73,6 @@ class IndexViewTests(TestCase):
 
         for category in list_of_categories:
             self.assertContains(response, category.name)
-
-    #@patch('rango.TopFiveCategoriesFromModels')
-    #def test_categories_viewed(self, mock_categories_list):
 
 
 class PageMethodTests(TestCase):
@@ -90,15 +92,13 @@ class PageMethodTests(TestCase):
         self.assertTrue(page.last_visit >= date_created)
 
 
-# Helper functions
-def add_category(name, views=0, likes=0):
-    category = Category.objects.get_or_create(name=name)[0]
-    category.views = views
-    category.likes = likes
+class BingSearchApiTests(TestCase):
+    @patch('rango.bing_search.requests.get')
+    def test_run_query_runs(self, mock_get):
+        """
+        Checks that the run query calls the bing search api, using a mock.
+        """
+        mock_get.return_value.ok = True
+        response = run_query('Python')
+        assert_is_not_none(response)
 
-    category.save()
-    return category
-
-
-def add_page(category, title, url):
-    return Page.objects.get_or_create(category=category, title=title, url=url)[0]

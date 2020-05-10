@@ -1,5 +1,5 @@
 from datetime import datetime
-from rango.models import Category
+from rango.models import Category, Page
 
 
 def get_server_side_cookie(request, cookie, default_val=None):
@@ -39,3 +39,16 @@ def get_category_list(max_results=0, starts_with=''):
             category_list = category_list[:max_results]
 
     return category_list
+
+
+def add_category(name, views=0, likes=0):
+    category = Category.objects.get_or_create(name=name)[0]
+    category.views = views
+    category.likes = likes
+
+    category.save()
+    return category
+
+
+def add_page(category, title, url):
+    return Page.objects.get_or_create(category=category, title=title, url=url)[0]

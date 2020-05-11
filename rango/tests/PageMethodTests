@@ -1,0 +1,48 @@
+from django.test import TestCase
+from rango.helpers import add_category, add_page
+from rango.factories import PageFactory, CategoryFactory
+from django.urls import reverse
+
+
+class PageMethodTests(TestCase):
+
+    def test_not_future_last_visit(self):
+        """
+        Checks that the last visit to a page is not in the future.
+        """
+        category = add_category('CSS', 10, 1)
+        page = add_page(category, 'CSS Tutorial', 'https://www.w3schools.com/css/')
+
+        self.assertTrue(page.last_visit <= timezone.now())
+
+    def test_last_visit_updated_when_page_requested(self):
+        """
+        Checks that the last visit to a page is updated when requested.
+        """
+        category = add_category('HTML', 5, 6)
+        page = add_page(category, 'HTML Tutorial', 'https://www.w3schools.com/html/')
+        date_created = page.last_visit
+
+        self.client.get(reverse('rango:goto'), {'page_id': page.id})
+        page.refresh_from_db()
+        self.assertTrue(page.last_visit >= date_created)
+
+    def test_not_future_last_visit_fake(self):
+        """
+        Checks that the last visit to a page is not in the future using fakes.
+        """
+        category = CategoryFactory()
+        page = PageFactory(category=category)
+        self.assertTrue(page.last_visit <= timezone.now())
+
+    def test_last_visit_updated_when_page_requested_fake(self):
+        """
+        Checks that the last visit to a page is updated when requested using fakes.
+        """
+        category = CategoryFactory()
+        page = PageFactory(category=category)
+        date_created = page.last_visit
+
+        self.client.get(reverse('rango:goto'), {'page_id': page.id})
+        page.refresh_from_db()
+        self.assertTrue(page.last_visit >= date_created)

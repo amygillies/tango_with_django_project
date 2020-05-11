@@ -2,6 +2,7 @@ from datetime import datetime
 from rango.models import Category, Page
 
 
+# For views
 def get_server_side_cookie(request, cookie, default_val=None):
     val = request.session.get(cookie)
     if not val:
@@ -41,6 +42,7 @@ def get_category_list(max_results=0, starts_with=''):
     return category_list
 
 
+# For unittests
 def add_category(name, views=0, likes=0):
     category = Category.objects.get_or_create(name=name)[0]
     category.views = views

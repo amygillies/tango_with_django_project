@@ -1,13 +1,12 @@
 from django.utils import timezone
 from django.test import TestCase
 from django.urls import reverse
-from rango.models import Category, Page
 from rango.TopFiveCategoriesFromStub import TopFiveCategoriesFromStub
 from mock import patch, Mock
 from nose.tools import assert_is_not_none
 from rango.bing_search import run_query
 from rango.helpers import add_category, add_page
-import json
+from rango.factories import CategoryFactory, PageFactory
 
 
 # Create your tests here.
@@ -77,6 +76,7 @@ class IndexViewTests(TestCase):
 
 
 class PageMethodTests(TestCase):
+
     def test_not_future_last_visit(self):
         category = add_category('CSS', 10, 1)
         page = add_page(category, 'CSS Tutorial', 'https://www.w3schools.com/css/')
@@ -86,6 +86,23 @@ class PageMethodTests(TestCase):
     def test_last_visit_updated_when_page_requested(self):
         category = add_category('HTML', 5, 6)
         page = add_page(category, 'HTML Tutorial', 'https://www.w3schools.com/html/')
+        date_created = page.last_visit
+
+        self.client.get(reverse('rango:goto'), {'page_id': page.id})
+        page.refresh_from_db()
+        self.assertTrue(page.last_visit >= date_created)
+
+    def test_not_future_last_visit_fake(self):
+
+        category = CategoryFactory()
+
+        page = PageFactory(category=category)
+
+        self.assertTrue(page.last_visit <= timezone.now())
+
+    def test_last_visit_updated_when_page_requested_fake(self):
+        category = CategoryFactory()
+        page = PageFactory(category=category)
         date_created = page.last_visit
 
         self.client.get(reverse('rango:goto'), {'page_id': page.id})

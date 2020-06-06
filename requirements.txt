@@ -4,7 +4,7 @@ mock
 certifi==2019.11.28
 chardet==3.0.4
 coverage==5.0.4
-Django==2.1.5
+Django==2.2.13
 django-registration-redux==2.2
 idna==2.9
 Pillow==5.4.1
